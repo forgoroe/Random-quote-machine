@@ -1,17 +1,17 @@
-var quoteText = "Meet the dusk";
-var quoteAuthor = "Sirius, Battlerite";
-var quotes = new Array();
-var counter = 0;
+var quoteText;
+var quoteAuthor;
+var quote = {};
 
 window.onload = function() {
-  requestQuote();
-  writeQuote();
-
-$('button').click(function getQuote(){
-  writeQuote();
-  requestQuote();
+var relaxTime = 3.5;
+$('button').click(function (){
+    requestQuote();
+    var button = $(this);
+    button.prop('disabled', true);
+    setTimeout(function(){
+      button.prop('disabled', false);
+    }, relaxTime*1000);
   });
-};
 
 function requestQuote(){
   var forismaticAPI = "http://api.forismatic.com/api/1.0/?method=getQuote";
@@ -20,19 +20,17 @@ function requestQuote(){
   var fullRequest = forismaticAPI+format+lang;
 
   $.getJSON(fullRequest, function(data) {
-    quotes.push({
+    quote = {
       quoteText: data.quoteText,
       quoteAuthor: data.quoteAuthor
-    });
-//  console.log(quotes);
+    };
+    console.log(quote);
+    displayQuote(quote);
 });
 }
 
-function writeQuote(){
-  console.log(quotes[counter]);
-
-
-//  document.getElementById("quoteText").innerHTML = quotes[counter].quoteText;
-//  document.getElementById("quoteAuthor").innerHTML = quotes[counter].quoteAuthor;
-//  counter++;
-}
+function displayQuote(){
+    document.getElementById("quoteText").innerHTML = quote.quoteText;
+    document.getElementById("quoteAuthor").innerHTML = quote.quoteAuthor;
+  }
+};
