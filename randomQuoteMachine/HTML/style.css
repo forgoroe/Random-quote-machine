@@ -2,6 +2,7 @@ h1 {
   font-family: monospace;
 }
 
-#quote {
+#quoteText {
+  font-family: serif;;
   font-style: italic;
 }
