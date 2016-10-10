@@ -3,7 +3,7 @@ var quoteAuthor;
 var quote = {};
 
 window.onload = function() {
-    var relaxTime = 3.5;
+    var relaxTime = 3;
     $('#nextQuoteBtn').click(function() {
         requestQuote();
         var button = $(this);
@@ -15,8 +15,6 @@ window.onload = function() {
         }, relaxTime * 1000);
     });
 
-
-
     function requestQuote() {
         var forismaticAPI = "http://api.forismatic.com/api/1.0/?method=getQuote";
         var format = "&format=json";
@@ -26,9 +24,10 @@ window.onload = function() {
         $.getJSON(fullRequest, function(data) {
             quote = {
                 quoteText: data.quoteText,
-                quoteAuthor: data.quoteAuthor
+                quoteAuthor: data.quoteAuthor,
+                quoteLink: data.quoteLink
             };
-            console.log(quote);
+            console.log(data);
             displayQuote(quote);
         });
     }
@@ -36,5 +35,8 @@ window.onload = function() {
     function displayQuote() {
         document.getElementById("quoteText").innerHTML = quote.quoteText;
         document.getElementById("quoteAuthor").innerHTML = quote.quoteAuthor;
+        document.getElementById("quoteLink").innerHTML = quote.quoteLink;
+        document.getElementById("quoteLink").href = quote.quoteLink;
+        document.getElementById("tweet").parentElement.href = "https://twitter.com/intent/tweet?text=" + quote.quoteText + ' - ' + quote.quoteAuthor;
     }
 };
