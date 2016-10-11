@@ -3,7 +3,7 @@ var quoteAuthor;
 var quote = {};
 
 window.onload = function() {
-    var relaxTime = 3;
+    var relaxTime = 1;
     $('#nextQuoteBtn').click(function() {
         requestQuote();
         var button = $(this);
@@ -17,19 +17,25 @@ window.onload = function() {
 
     function requestQuote() {
         var forismaticAPI = "http://api.forismatic.com/api/1.0/?method=getQuote";
-        var format = "&format=json";
+        var format = "&format=jsonp";
+        var jsonP = '&jsonp=?';
         var lang = "&lang=en";
-        var fullRequest = forismaticAPI + format + lang;
+        var fullRequest = forismaticAPI + format + jsonP + lang;
 
-        $.getJSON(fullRequest, function(data) {
-            quote = {
-                quoteText: data.quoteText,
-                quoteAuthor: data.quoteAuthor,
-                quoteLink: data.quoteLink
-            };
-            console.log(data);
-            displayQuote(quote);
+        $.getJSON(fullRequest, function(data){
+          console.log(data);
+          quote = {
+              quoteText: data.quoteText,
+              quoteAuthor: data.quoteAuthor,
+              quoteLink: data.quoteLink
+          };
+          displayQuote();
         });
+    }
+
+    function callback(data){
+      var result = data;
+      console.log(data);
     }
 
     function displayQuote() {
