@@ -1,13 +1,10 @@
-# FreeCodeCamp
-My humble FreeCodeCamp projects
-
 # Projects
 
 - [random quote machine](https://github.com/forgoroe/FreeCodeCamp/tree/master/randomQuoteMachine)
 - NotReallyPortfolio
 - AngularJSTest
 
-The only one I would consider a proper project for now is [random quote machine](https://github.com/forgoroe/FreeCodeCamp/tree/master/randomQuoteMachine).
+Ignore all except for [random quote machine](https://github.com/forgoroe/FreeCodeCamp/tree/master/randomQuoteMachine).
 
 Here's a preview:
 
