@@ -1,6 +1,8 @@
 #Random quote machine
 Creating a page that allows to request random quotes from the [Forismatic API](http://forismatic.com/en/api/) and tweet them.
 
+![preview](http://res.cloudinary.com/forgoroe/image/upload/v1476263996/previews/randomquotegeneratorpic_naftyr.png)
+
 ##Motivation
 
 I have created this very small project to practice.
