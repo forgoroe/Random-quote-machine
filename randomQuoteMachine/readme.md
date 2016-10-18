@@ -9,7 +9,7 @@ I have created this very small project to practice.
 
 Download the project and open index.html in your browser to taste some of this mess.
 
-... Or simply check this [codepen](http://codepen.io/Forgoroe/full/WGJZQJ/).
+... Or simply check this [codepen](http://codepen.io/Forgoroe/full/WGJZQJ/) or this [github preview](http://htmlpreview.github.io/?https://github.com/forgoroe/Random-quote-machine/blob/master/randomQuoteMachine/HTML/index.html)
 
 ##API Reference
 
