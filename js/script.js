@@ -3,7 +3,7 @@ var quoteAuthor;
 var quote = {};
 
 window.onload = function() {
-    var relaxTime = 1;
+    var relaxTime = 0.1;
     $('#nextQuoteBtn').click(function() {
         requestQuote();
         var button = $(this);

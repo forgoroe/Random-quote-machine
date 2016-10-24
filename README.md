@@ -1,14 +1,27 @@
-# Projects
+#Random quote machine
+Creating a page that allows to request random quotes from the [Forismatic API](http://forismatic.com/en/api/) and tweet them.
 
-- [random quote machine](https://github.com/forgoroe/FreeCodeCamp/tree/master/randomQuoteMachine)
-- NotReallyPortfolio
-- AngularJSTest
+![preview](http://res.cloudinary.com/forgoroe/image/upload/v1476263996/previews/randomquotegeneratorpic_naftyr.png)
 
-Ignore all except for [random quote machine](https://github.com/forgoroe/FreeCodeCamp/tree/master/randomQuoteMachine).
+##Motivation
 
-Here's a preview:
+I have created this very small project to practice.
 
-![](http://res.cloudinary.com/forgoroe/image/upload/v1476263996/previews/randomquotegeneratorpic_naftyr.png).
+##Installation
 
+Download the project and open index.html in your browser to taste some of this mess.
 
-Also available on [codepen.io](http://codepen.io/Forgoroe/full/WGJZQJ/) or on [github preview](http://htmlpreview.github.io/?https://github.com/forgoroe/Random-quote-machine/blob/master/randomQuoteMachine/HTML/index.html).
+... Or simply check this [codepen](http://codepen.io/Forgoroe/full/WGJZQJ/) or this [github preview](http://htmlpreview.github.io/?https://github.com/forgoroe/Random-quote-machine/blob/master/randomQuoteMachine/HTML/index.html)
+
+##API Reference
+
+[Forismatic API](http://forismatic.com/en/api/).
+
+##Contributors
+
+Me, myself and I
+
+##License
+
+[MIT License](https://opensource.org/licenses/MIT)
+
