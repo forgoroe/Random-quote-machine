@@ -16,7 +16,7 @@ window.onload = function() {
     });
 
     function requestQuote() {
-        var forismaticAPI = "http://api.forismatic.com/api/1.0/?method=getQuote";
+        var forismaticAPI = "//api.forismatic.com/api/1.0/?method=getQuote";
         var format = "&format=jsonp";
         var jsonP = '&jsonp=?';
         var lang = "&lang=en";
